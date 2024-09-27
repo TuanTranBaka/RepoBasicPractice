@@ -16,5 +16,13 @@ function checkCountValue() {
         alert("Your Instagram post gained 10 followers! Congratulations")
     } else if (count === 20) {
         alert("Your Instagram post gained 20 followers! Keep it up!")
+    } else if (count === 0) {
+        alert("The Followers count has been reset");
     }
+}
+// ham reset
+function resetCount() {
+    count = 0; // Đặt lại count về 0
+    displayCount(); // Cập nhật hiển thị
+    checkCountValue(); // Kiểm tra giá trị count
 }
